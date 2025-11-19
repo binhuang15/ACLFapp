@@ -20,7 +20,7 @@ The system utilizes pre-trained machine learning models to analyze clinical biom
 Crucial: The models were trained using `scikit-learn` v1.2.2. Using a newer version (v1.3+) will cause a `ValueError` regarding incompatible dtypes.
 ### 1. Clone the repository:
 ```bash
-git clone [https://github.com/binhuang15/ACLFapp.git](https://github.com/binhuang15/ACLFapp.git)
+git clone https://github.com/binhuang15/ACLFapp.git
 cd ACLFapp
 ```
 ### 2. Install dependencies:
