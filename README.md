@@ -1,8 +1,15 @@
-# ACLF Risk Prediction System
+# ACLF Deterioration Risk Prediction Model
 
 This repository contains a Python-based tool for predicting the risk factors of Acute-on-Chronic Liver Failure (ACLF) over different time horizons (1 month, 3 months, and 1 year).
 
-The system utilizes pre-trained machine learning models to analyze clinical biomarkers including Total Bilirubin (TB), Sodium (Na), Platelets (PLT), INR, and 2D-Shear Wave Elastography (SWE).
+**Intended use:** Prognostic prediction of 30-day, 90-day, and 1-year outcomes (deterioration risk) for ACLF patients.
+
+**Inputs:** Five clinical/imaging features (total bilirubin [TB, μmol/L], international normalized ratio [INR], sodium [Na, mmol/L], platelet count [PLT, ×10⁹/L], 2D shear wave elastography [2D-SWE, kPa]).
+
+**Outputs:** Probability of deterioration (range: 0–1) for each time point. If the predicted probability was less than or equal to 22.7%, 44.2% or 45.6%, the patients were predicted to recover within 30 days, 90 days or 1 year. If Serum-SWE-ML value was greater than 22.7%, 44.2% or 45.6%, the patients’ condition was expected to deteriorate at corresponding time point.
+
+**Limits:** Predictive performance may vary in populations with extreme feature values or baseline characteristics differing from the study cohort; short-term (30-day) prediction exhibits relatively lower calibration compared to 90-day and 1-year predictions.
+
 
 ## Project Structure
 
